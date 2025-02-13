@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="#">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="Eclipse Developer">
+    <meta name="organization" content="Eclipse Developments">
+    <meta name="url" content="#">
+
+    <meta name="theme-color" content="#1a1b2f">
+    <meta name="default-language" content="en">
+
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="no-referrer">
+    <meta name="bot-check" content="no-bots">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/png" href="#">
+
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="#">
+    <script src="#" defer></script>
+
+    <link rel="manifest" href="#">
+    
+    <title>Checking Browser...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a1b2f, #2a1a2f);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+        }
+
+        .preloader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-image {
+            width: 50px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .loading-image {
+            width: 60px;
+            height: auto;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 20px;
+            background: #141414;
+            width: 230px;
+            padding: 8px 0;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .bottom-bar a {
+            color: #6a406f;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 4px;
+        }
+
+        .bottom-bar a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .header-image {
+                width: 80px;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .loading-image {
+                width: 40px;
+            }
+
+            .bottom-bar {
+                width: 190px;
+                padding: 6px 0;
+                border-radius: 8px;
+                font-size: 0.7rem;
+                bottom: 15px;
+            }
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+            window.location.href = "#";
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="preloader">
+        <img src="assets/images/browser-checking.png" alt="Image" class="header-image">
+        <h4>Checking browser...</h4>
+        <p>Verifying You're Human, please wait.</p>
+        <img src="assets/animations/loading.webp" alt="Loading" class="loading-image">
+    </div>
+    <div class="bottom-bar">
+        Powered by <a href="https://github.com/eclipsedev1337" target="_blank">Eclipse Developments</a>
+    </div>
+</body>
+</html>
